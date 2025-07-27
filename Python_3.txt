@@ -1,0 +1,14 @@
+print("Вітаємо вас в програмі TODO list")
+dej = int(input("ВИберіть дію яку ви бажаєте виконати: \n 0. Подивитись список дійсний \n 1. Додати завдання \n\
+2. Видалити завдання \n3. Змінити завдання \n (Для виконання тої чи іншої дії введіть номер тієї дії) "))
+machenliste = ["Шляфі шляфі", "Ням ням обідяний", "Бавовна", "Вечірня перемога", "відер шляфі"]
+if dej == 0:
+    print(machenliste)
+elif dej == 1:
+    addieren = input("Введіть що ви там бажаєте добавити ")
+    machenliste.append(addieren)
+    print(machenliste)
+elif dej == 2:
+    wybir = int(input("Індекс введи"))
+    machenliste.remove(machenliste[wybir-1])
+    print(machenliste)
